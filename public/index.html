@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QualiT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section id="hero" class="text-white relative z-50">
+        <div class="container mx-auto px-4">
+          <header>
+            <nav class="flex items-center justify-between py-4">
+              <div class="logo text-2xl font-bold text-white flex items-center">
+                <img
+                  src="images/qualit-logo.png"
+                  alt="QualiT Logo"
+                  class="inline-block w-auto h-10 mr-3"
+                />
+              </div>
+                            <div class="hidden lg:flex items-center space-x-16">
+                <a
+                  href="#home"
+                  class="text-white hover:text-gray-400 transition-colors"
+                  >Home</a
+                >
+                <a
+                  href="#our-why"
+                  class="text-white hover:text-gray-400 transition-colors"
+                  >Our why</a
+                >
+                <a
+                  href="#our-platform"
+                  class="text-white hover:text-gray-400 transition-colors"
+                  >Our platform</a
+                >
+                <a
+                  href="#our-team"
+                  class="text-white hover:text-gray-400 transition-colors"
+                  >Our team</a
+                >
+              </div>
+              <div class="flex items-center">
+                <a
+                  href="#register"
+                  class="hidden lg:inline-block btn border-white text-white py-2 px-4 rounded-md hover:bg-lime-400 hover:text-black transition"
+                >
+                  Register Interest <span class="ml-2 text-lime-200">↗</span>
+                </a>
+                <button
+                  id="mobile-menu-button"
+                  class="lg:hidden text-white focus:outline-none"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </nav>
+            <!-- Full-Screen Mobile Menu Modal -->
+            <div id="mobile-menu" class="hidden fixed inset-0 bg-brand-dark-green z-[9999] lg:hidden">
+              <div class="flex flex-col h-full">
+                <!-- Header with Close Button -->
+                <div class="flex items-center justify-between p-6">
+                  <div class="logo text-2xl font-bold text-white flex items-center">
+                    <img
+                      src="images/qualit-logo.png"
+                      alt="QualiT Logo"
+                      class="inline-block w-auto h-10 mr-3"
+                    />
+                  </div>
+                  <button
+                    id="mobile-menu-close"
+                    class="text-white focus:outline-none"
+                  >
+                    <svg
+                      class="w-8 h-8"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                
+                <!-- Navigation Links -->
+                <nav class="flex-1 flex flex-col justify-center items-center space-y-12 px-6">
+                  <a
+                    href="#home"
+                    class="text-white text-3xl font-bold hover:text-lime-300 transition-colors mobile-nav-link"
+                    >Home</a
+                  >
+                  <a
+                    href="#our-why"
+                    class="text-white text-3xl font-bold hover:text-lime-300 transition-colors mobile-nav-link"
+                    >Our why</a
+                  >
+                  <a
+                    href="#our-platform"
+                    class="text-white text-3xl font-bold hover:text-lime-300 transition-colors mobile-nav-link"
+                    >Our platform</a
+                  >
+                  <a
+                    href="#our-team"
+                    class="text-white text-3xl font-bold hover:text-lime-300 transition-colors mobile-nav-link"
+                    >Our team</a
+                  >
+                  <a
+                    href="#register"
+                    class="text-lime-300 text-lg font-bold hover:text-white transition-colors mobile-nav-link border-2 border-lime-300 px-8 py-4 rounded-lg"
+                    >Register Interest ↗</a
+                  >
+                </nav>
+              </div>
+            </div>
+            </nav>
+          </header>
+
+          <div class="py-24">
+            <div class="w-full flex flex-col lg:flex-row justify-between">
+              <div class="max-w-2xl">
+                <h1
+                  class="text-5xl lg:text-6xl font-bold leading-tight mb-8 text-center lg:text-left"
+                >
+                  Changing how the construction industry manages quality.
+                </h1>
+              </div>
+              <div class="flex items-center mt-12 max-w-sm mx-auto lg:mx-0">
+                <img
+                  src="images/cat.jpg"
+                  alt="Duane McCreadie"
+                  class="w-16 h-16 rounded-full border-2 border-white flex-shrink-0"
+                />
+                <div class="ml-4 flex flex-col">
+                  <div>
+                    <span class="block font-bold text-lime-200"
+                      >Duane McCreadie
+                    </span>
+                    <span class="font-normal text-sm text-gray-400"
+                      >BSc(Hons) MCIOS, NECreg</span
+                    >
+                  </div>
+                  <p class="text-sm mt-2 text-gray-300 max-w-md">
+                    Founder, Duane McCreadie has 20 years of industry experience
+                    & has delivered over £850m of projects with Tier 1
+                    contractors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-container container mx-auto">
+          <img
+            src="images/hero.jpg"
+            alt="Construction site"
+            class="hero-h w-full object-cover"
+          />
+        </div>
+      </section>
+
+      <section id="our-why" class="bg-white text-black relative z-10">
+        <div class="container mx-auto px-4 py-24">
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div class="w-full lg:w-1/3">
+              <p class="text-sm font-light text-gray-500">OUR WHY</p>
+              <h2 class="text-4xl font-bold mt-4">
+                The Construction Industry is suffering as a result of poor
+                quality.
+              </h2>
+              <div class="my-8">
+                <div class="flex flex-wrap gap-2 mb-2">
+                  <span
+                    class="bg-lime-200 border border-gray-300 text-black py-2 px-4 rounded-full text-sm font-semibold"
+                    >Low Skills ↗</span
+                  >
+                  <span
+                    class="border border-gray-300 text-gray-500 py-2 px-4 rounded-full text-sm font-semibold"
+                    >Complexity</span
+                  >
+                  <span
+                    class="border border-gray-300 text-gray-500 py-2 px-4 rounded-full text-sm font-semibold"
+                    >Cost</span
+                  >
+                </div>
+                <div class="flex flex-wrap gap-2 mb-2">
+                  <span
+                    class="border border-gray-300 text-gray-500 py-2 px-4 rounded-full text-sm font-semibold"
+                    >Risk to People</span
+                  >
+                  <span
+                    class="border border-gray-300 text-gray-500 py-2 px-4 rounded-full text-sm font-semibold"
+                    >Reputation</span
+                  >
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="border border-gray-300 text-gray-500 py-2 px-4 rounded-full text-sm font-semibold"
+                    >Government</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-3/5 lg:pl-16 text-left mt-8 lg:mt-0">
+              <h3 class="text-2xl font-bold mb-4">
+                Low skills on all levels of the spectrum
+              </h3>
+              <p class="text-gray-600">
+                The construction industry is facing a significant challenge due
+                to a low-skilled workforce, marked by inadequate competence
+                across trade, management, and design roles. This issue is
+                compounded by a growing skills shortage, as fewer young people
+                enter the sector while a large portion of the current workforce
+                approaches retirement. The aging demographic not only reduces
+                the availability of experienced workers but also highlights the
+                lack of effective succession planning.
+              </p>
+              <a
+                href="#register"
+                class="mt-8 inline-block bg-lime-950 text-white py-3 px-6 rounded-md font-semibold hover:bg-gray-900 transition"
+              >
+                Register Interest <span class="ml-2 text-lime-200">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-platform" class="bg-gray-100 text-black py-24">
+        <div class="container mx-auto px-4">
+          <p class="text-sm font-light text-gray-500">OUR PLATFORM</p>
+          <h2 class="text-4xl font-bold mt-4 max-w-2xl">
+            A first-to-market platform that can provide critical facts, steps
+            and guidance to Construction Professionals.
+          </h2>
+          <div class="flex flex-col lg:flex-row justify-between gap-8 my-12">
+            <div class="bg-brand-dark-green pt-8 px-8 rounded-2xl">
+              <h3 class="text-2xl font-bold text-white">
+                Data analytics dashboard
+              </h3>
+              <p class="text-gray-300 mt-2">
+                Real-time dashboards and reporting tailored to help you gain
+                insights and improve efficiency.
+              </p>
+              <div class="flex justify-center">
+                <img
+                  src="images/platform-analytics.png"
+                  alt="Data Analytics Dashboard"
+                  class="mt-8 rounded-t-xl img-platform"
+                />
+              </div>
+            </div>
+            <div class="bg-brand-dark-green pt-8 px-8 rounded-2xl mt-8 lg:mt-0">
+              <h3 class="text-2xl font-bold text-white">
+                Critical facts and guidance
+              </h3>
+              <p class="text-gray-300 mt-2">
+                Ensuring consideration & focus for all key elements of a given
+                work package.
+              </p>
+              <div class="flex justify-center">
+                <img
+                  src="images/platform-guidance.png"
+                  alt="Critical Facts and Guidance"
+                  class="mt-8 rounded-t-xl img-platform"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row justify-between w-full items-center"
+          >
+            <p class="text-gray-600 max-w-2xl text-center lg:text-left">
+              Creating a first-to-market platform that can provide critical
+              construction quality facts, steps, focus and guidance.
+            </p>
+            <a
+              href="#register"
+              class="mt-8 lg:mt-0 inline-block bg-lime-950 text-white py-3 px-6 rounded-md font-semibold hover:bg-gray-900 transition"
+            >
+              Register Interest <span class="ml-2 text-lime-200">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-team" class="bg-white text-black py-24">
+        <div class="container mx-auto px-4">
+          <p class="text-sm font-light text-gray-500">OUR TEAM</p>
+          <h2 class="text-4xl font-bold mt-4 max-w-2xl">
+            Who we are, and what we do in our mission to help Construction
+            Professionals.
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-12">
+            <div
+              class="md:col-span-2 bg-brand-dark-green text-white rounded-2xl flex gap-8"
+            >
+              <div class="w-full md:w-2/3 p-8">
+                <p class="text-sm font-light text-lime-200">FOUNDER</p>
+                <h3 class="text-3xl font-bold mt-2">Duane McCreadie</h3>
+                <p class="mt-4">
+                  Founder, Duane McCreadie has 20 years of industry experience &
+                  has delivered over £850m of projects with Tier 1 contractors.
+                </p>
+                <a
+                  href="#"
+                  class="inline-block bg-lime-200 text-black rounded-full p-4 mt-8"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 256 256"
+                    xml:space="preserve"
+                  >
+                    <g
+                      style="
+                        stroke: none;
+                        stroke-width: 0;
+                        stroke-dasharray: none;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        fill: none;
+                        fill-rule: nonzero;
+                        opacity: 1;
+                      "
+                      transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                    >
+                      <path
+                        d="M 1.48 29.91 h 18.657 v 60.01 H 1.48 V 29.91 z M 10.809 0.08 c 5.963 0 10.809 4.846 10.809 10.819 c 0 5.967 -4.846 10.813 -10.809 10.813 C 4.832 21.712 0 16.866 0 10.899 C 0 4.926 4.832 0.08 10.809 0.08"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: currentcolor;
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform=" matrix(1 0 0 1 0 0) "
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M 31.835 29.91 h 17.89 v 8.206 h 0.255 c 2.49 -4.72 8.576 -9.692 17.647 -9.692 C 86.514 28.424 90 40.849 90 57.007 V 89.92 H 71.357 V 60.737 c 0 -6.961 -0.121 -15.912 -9.692 -15.912 c -9.706 0 -11.187 7.587 -11.187 15.412 V 89.92 H 31.835 V 29.91 z"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: currentcolor;
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform=" matrix(1 0 0 1 0 0) "
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="w-full md:w-2/5">
+                <img
+                  src="images/cat.jpg"
+                  alt="Duane McCreadie"
+                  class="rounded-r-2xl h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="bg-brand-dark-green text-white p-8 rounded-2xl">
+              <img
+                src="images/cat.jpg"
+                alt="Michael"
+                class="w-24 h-24 rounded-full grayscale"
+              />
+              <p class="text-sm font-light text-lime-200 mt-4">
+                ADMIN & TECH MANAGER
+              </p>
+              <h3 class="text-3xl font-bold mt-2">Michael</h3>
+              <p class="mt-2">
+                Part time, with 10 years construction experience.
+              </p>
+            </div>
+            <div class="bg-brand-dark-green text-white p-8 rounded-2xl">
+              <img
+                src="images/cat.jpg"
+                alt="Selmison"
+                class="w-24 h-24 rounded-full grayscale"
+              />
+              <p class="text-sm font-light text-lime-200 mt-4">
+                QUALITY MANAGER
+              </p>
+              <h3 class="text-3xl font-bold mt-2">Selmison</h3>
+              <p class="mt-2">
+                Full time employee with international experience.
+              </p>
+            </div>
+            <div class="bg-brand-dark-green text-white p-8 rounded-2xl">
+              <img
+                src="images/cat.jpg"
+                alt="Jim"
+                class="w-24 h-24 rounded-full grayscale"
+              />
+              <p class="text-sm font-light text-lime-200 mt-4">
+                CONTENT CREATOR & PEER REVIEWER
+              </p>
+              <h3 class="text-3xl font-bold mt-2">Jim</h3>
+              <p class="mt-2">
+                Each professional contributor will be selected on their key
+                skills.
+              </p>
+            </div>
+            <div class="bg-brand-dark-green text-white p-8 rounded-2xl">
+              <img
+                src="images/cat.jpg"
+                alt="Selmison"
+                class="w-24 h-24 rounded-full grayscale"
+              />
+              <p class="text-sm font-light text-lime-200 mt-4">
+                QUALITY MANAGER
+              </p>
+              <h3 class="text-3xl font-bold mt-2">Selmison</h3>
+              <p class="mt-2">
+                Full time employee with international experience.
+              </p>
+            </div>
+            <div class="bg-brand-dark-green text-white p-8 rounded-2xl">
+              <img
+                src="images/cat.jpg"
+                alt="Board"
+                class="w-24 h-24 rounded-full grayscale"
+              />
+              <p class="text-sm font-light text-lime-200 mt-4">
+                EXECUTIVE BOARD
+              </p>
+              <h3 class="text-3xl font-bold mt-2">Board</h3>
+              <p class="mt-2">
+                An industry-leading board to gain the best business direction.
+              </p>
+            </div>
+            <div class="bg-lime-200 text-black p-8 rounded-2xl">
+              <p class="text-sm font-bold text-lime-900">CAREERS</p>
+              <h3 class="text-3xl font-bold mt-2">Join our team</h3>
+              <p class="mt-2">
+                We're Changing how the construction industry manages quality. if
+                you feel like you could help us, then apply below.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-brand-dark-green rounded-full py-3 px-8 mt-8 font-light text-lime-200"
+                >Careers at qualiT ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" class="bg-white text-black pb-24">
+        <div class="container mx-auto px-4 text-center">
+          <span
+            class="block text-4xl font-light leading-snug max-w-4xl mx-auto not-italic"
+          >
+            “With the right execution, a platform like qualiT would be a
+            <span class="bg-lime-200 rounded-lg px-2">brilliant asset</span> to
+            the Construction Industry”
+          </span>
+          <cite class="mt-8 block not-italic">
+            <span class="font-bold">Barry Neilson OBE</span><br />
+            <span class="text-gray-500 font-light">CITB NI CEO</span>
+          </cite>
+        </div>
+      </section>
+    </main>
+
+    <footer id="register" class="text-white pt-24">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+          <div>
+            <h3 class="text-6xl font-light leading-tight max-w-2xl pb-4">
+              Sign up to register your interest in qualiT
+              <span class="text-lime-200">↗</span>
+            </h3>
+          </div>
+          <div
+            class="bg-white text-black p-10 rounded-2xl form-pos border-lime-950 border-8 w-full lg:max-w-md"
+          >
+            <form>
+              <label for="email" class="sr-only">Your Email</label>
+              <input
+                placeholder="Your Email"
+                autocomplete="off"
+                class="px-3 py-2.5 w-full text-lg font-light rounded-lg focus:outline placeholder:text-black focus:outline-2 focus:outline-offset-2 bg-[#ececec] text-[#000000] focus:outline-[#000000] border-[#cccccc]"
+              />
+              <button
+                type="submit"
+                class="w-full bg-lime-200 text-black font-bold py-4 px-4 rounded-md mt-4 hover:bg-lime-400 transition"
+              >
+                Register Interest ↗
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="mt-24 pt-8 border-t border-gray-700 flex flex-col lg:flex-row lg:justify-between lg:items-center"
+        >
+          <div class="flex items-center gap-8">
+            <div>
+              <img src="images/qualit-logo.png" alt="QualiT Logo" class="h-8" />
+              <p class="text-sm text-gray-400 mt-4">
+                The Fake Gasworks, 304 Cromac Pl,<br />Belfast BT7 2JB, United
+                Kingdom
+              </p>
+              <p class="text-sm text-gray-400 mt-2">hello@qualit.com</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-8 mt-8">
+            <div class="md:self-end">
+              <a href="#" class="text-lime-200 hover:text-white"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  xml:space="preserve"
+                >
+                  <g
+                    style="
+                      stroke: none;
+                      stroke-width: 0;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: none;
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                  >
+                    <path
+                      d="M 1.48 29.91 h 18.657 v 60.01 H 1.48 V 29.91 z M 10.809 0.08 c 5.963 0 10.809 4.846 10.809 10.819 c 0 5.967 -4.846 10.813 -10.809 10.813 C 4.832 21.712 0 16.866 0 10.899 C 0 4.926 4.832 0.08 10.809 0.08"
+                      style="
+                        stroke: none;
+                        stroke-width: 1;
+                        stroke-dasharray: none;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        fill: currentcolor;
+                        fill-rule: nonzero;
+                        opacity: 1;
+                      "
+                      transform=" matrix(1 0 0 1 0 0) "
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M 31.835 29.91 h 17.89 v 8.206 h 0.255 c 2.49 -4.72 8.576 -9.692 17.647 -9.692 C 86.514 28.424 90 40.849 90 57.007 V 89.92 H 71.357 V 60.737 c 0 -6.961 -0.121 -15.912 -9.692 -15.912 c -9.706 0 -11.187 7.587 -11.187 15.412 V 89.92 H 31.835 V 29.91 z"
+                      style="
+                        stroke: none;
+                        stroke-width: 1;
+                        stroke-dasharray: none;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        fill: currentcolor;
+                        fill-rule: nonzero;
+                        opacity: 1;
+                      "
+                      transform=" matrix(1 0 0 1 0 0) "
+                      stroke-linecap="round"
+                    />
+                  </g></svg
+              ></a>
+            </div>
+            <div>
+              <nav class="flex gap-8 text-sm flex-col md:flex-row">
+                <a href="#home" class="text-gray-400 hover:text-lime-200"
+                  >Home</a
+                >
+                <a href="#our-why" class="text-gray-400 hover:text-lime-200"
+                  >Why we're here</a
+                >
+                <a
+                  href="#our-platform"
+                  class="text-gray-400 hover:text-lime-200"
+                  >Our platform</a
+                >
+                <a href="#our-team" class="text-gray-400 hover:text-lime-200"
+                  >About us</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="py-4 flex flex-col md:flex-row justify-between lg:items-center text-sm">
+          <p class="text-gray-400">
+            Copyright ©2025 QualiT Limited. All rights reserved.
+          </p>
+          <a href="#" class="text-gray-400 hover:text-lime-200"
+            >Privacy policy</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
